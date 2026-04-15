@@ -69,22 +69,17 @@
 
 # print(f"Saldo actualizado: {saldo}")
 
-##########################################################
-# EJERCICIOS PRACTICOS #
-##########################################################
 
-##########################################################
+# EJERCICIOS PRACTICOS #
 # DATOS INICIALES #
-##########################################################
 # Nombre = "Mayiyuz"
 # Primer_apellido = "Rodriguez"
 # Segundo_apellido = "Valencia"
 # Edad = 22
 # Saldo = 300000
 
-##############################
+
 # DICCIONARIO
-##############################
 # USUARIOS= {
 #     "Nombre": Nombre,
 #     "Primer_apellido": Primer_apellido,
@@ -98,25 +93,21 @@
 # NOMBRE COMPLETO (STRING)
 #print(f"Cliente: {Nombre} {Primer_apellido} {Segundo_apellido}")
 
-##############################
+
 # FORMULA MAYOR QUE > (EN ESTE CASO MAYOR DE EDAD)
-##############################
 # if Edad >= 18:
 #     print("Mayor de edad y con buen saldo, cliente aprobado")
 # else:
 #     print("mMenos de edad o con bajo saldo, cliente rechazado")
 
-##############################
 # AUMENTO DEL 10% *=1.10
-##############################
 #Saldo = Saldo + (Saldo *0.10)
 
 #print(f"Nuevo saldo: {Saldo}")
 
 
-##############################
-#### 🎯 OBJETIVO
-##############################
+
+# 🎯 OBJETIVO
 # Crear un programa que:
 
 # Guarde varios usuarios
@@ -129,9 +120,7 @@
 # USUARIOS, CUANDO SON VARIOS ACCIONES DEBEN SER LISTAS, DICCIONARIOS O UNA COMBINACION DE AMBOS
 # EN ESTE CASO SE USARAN DICCIONARIOS DENTRO DE UNA LISTA, PARA GUARDAR VARIOS USUARIOS CON SUS RESPECTIVOS DATOS
 
-##############################
 #DICCIONARIO
-##############################
 Cliente = [
     {
     "Primer_nombre": "Miguel",
@@ -163,17 +152,13 @@ print ("Informacion de los clientes:")
 for Cliente in Cliente: # FORMULA PARA RECORRER LA LSITA DE CLIENTES
     print(f"Cliente: {Cliente['Primer_nombre']} {Cliente['Segundo_nombre']} {Cliente['Primer_apellido']} {Cliente['Segundo_apellido']}")
     
-    ##############################
-    # EVALUAR SI ES MAYOR DE EDAD
-    ##############################
+    # EVALUAR SI ES MAYOR DE EDAD  
     if Cliente ["Edad"] >=18:
         print("Mayor de edad, Cliente aprobado")
     else: 
         print("Menos de edad, Cliente rechazado")
 
-##############################
 # AUMENTO DEL 10% AL SALDO
-##############################
 Saldo = Cliente ['Saldo'] + (Cliente ['Saldo'] * 0.10)
 print(f"Saldo actualizado con el 10%: {Saldo}")
 
