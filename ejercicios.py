@@ -69,14 +69,22 @@
 
 # print(f"Saldo actualizado: {saldo}")
 
-#EJERCICIO NUEVO DATOS INICIALES
-Nombre = "Mayiyuz"
-Primer_apellido = "Rodriguez"
-Segundo_apellido = "Valencia"
-Edad = 22
-Saldo = 300000
+##########################################################
+# EJERCICIOS PRACTICOS #
+##########################################################
 
-#DICCIONARIO
+##########################################################
+# DATOS INICIALES #
+##########################################################
+# Nombre = "Mayiyuz"
+# Primer_apellido = "Rodriguez"
+# Segundo_apellido = "Valencia"
+# Edad = 22
+# Saldo = 300000
+
+##############################
+# DICCIONARIO
+##############################
 # USUARIOS= {
 #     "Nombre": Nombre,
 #     "Primer_apellido": Primer_apellido,
@@ -86,18 +94,88 @@ Saldo = 300000
 # }
 # print(USUARIOS)
 
+
 # NOMBRE COMPLETO (STRING)
-print(f"Cliente: {Nombre} {Primer_apellido} {Segundo_apellido}")
+#print(f"Cliente: {Nombre} {Primer_apellido} {Segundo_apellido}")
 
-# MAYOR DE EDAD
-if Edad >= 18:
-    print("Mayor de edad y con buen saldo, cliente aprobado")
-else:
-    print("mMenos de edad o con bajo saldo, cliente rechazado")
+##############################
+# FORMULA MAYOR QUE > (EN ESTE CASO MAYOR DE EDAD)
+##############################
+# if Edad >= 18:
+#     print("Mayor de edad y con buen saldo, cliente aprobado")
+# else:
+#     print("mMenos de edad o con bajo saldo, cliente rechazado")
 
+##############################
 # AUMENTO DEL 10% *=1.10
-Saldo = Saldo + (Saldo *0.10)
+##############################
+#Saldo = Saldo + (Saldo *0.10)
 
-print(f"Nuevo saldo: {Saldo}")
+#print(f"Nuevo saldo: {Saldo}")
+
+
+##############################
+#### 🎯 OBJETIVO
+##############################
+# Crear un programa que:
+
+# Guarde varios usuarios
+# Muestre la información de cada uno
+# Evalúe si son mayores de edad
+# Aplique aumento del 10% al saldo
+# Muestre el saldo actualizado
+
+#### 📝DESARROLLO DE ACTIVIADAD.
+# USUARIOS, CUANDO SON VARIOS ACCIONES DEBEN SER LISTAS, DICCIONARIOS O UNA COMBINACION DE AMBOS
+# EN ESTE CASO SE USARAN DICCIONARIOS DENTRO DE UNA LISTA, PARA GUARDAR VARIOS USUARIOS CON SUS RESPECTIVOS DATOS
+
+##############################
+#DICCIONARIO
+##############################
+Cliente = [
+    {
+    "Primer_nombre": "Miguel",
+    "Segundo_nombre": "Santiago",
+    "Primer_apellido": "Rodriguez",
+    "Segundo_apellido": "Panto",
+    "Edad": 23,
+    "Saldo": 100000
+    },
+    {
+    "Primer_nombre": "Laura",
+    "Segundo_nombre": "Isabel",
+    "Primer_apellido": "Gomez",
+    "Segundo_apellido": "Lopez",
+    "Edad": 25,
+    "Saldo": 150000
+    },
+    {
+    "Primer_nombre": "Andres",
+    "Segundo_nombre": "Felipe",
+    "Primer_apellido": "Martinez",
+    "Segundo_apellido": "Garcia",
+    "Edad": 17,
+    "Saldo": 80000
+    }
+]
+
+print ("Informacion de los clientes:")
+for Cliente in Cliente: # FORMULA PARA RECORRER LA LSITA DE CLIENTES
+    print(f"Cliente: {Cliente['Primer_nombre']} {Cliente['Segundo_nombre']} {Cliente['Primer_apellido']} {Cliente['Segundo_apellido']}")
+    
+    ##############################
+    # EVALUAR SI ES MAYOR DE EDAD
+    ##############################
+    if Cliente ["Edad"] >=18:
+        print("Mayor de edad, Cliente aprobado")
+    else: 
+        print("Menos de edad, Cliente rechazado")
+
+##############################
+# AUMENTO DEL 10% AL SALDO
+##############################
+Saldo = Cliente ['Saldo'] + (Cliente ['Saldo'] * 0.10)
+print(f"Saldo actualizado con el 10%: {Saldo}")
+
 
 
